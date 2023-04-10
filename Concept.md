@@ -100,4 +100,9 @@
 ## Project 시작 전 할 일
   - CSS, JS, Images 폴더 생성 후 관리 
   - ** html은 폴더 만들지 말 것 **
-  - ``` <link rel=”stylesheet” href=https://cdn.jsdelivr.net/npm/rest-css@5.0.1/reset.min.css> ```
+  - Reset.css.cdn 
+   > - 브라우저 마다 기본적으로 적용되는 요소들이 있다. 예를 들어 너비 등이 있는데 이것을 초기화 시킬 때 사용 
+   > - jsdelivr Github 사용
+   > - ``` <head> ``` 안쪽에 넣으면 CSS 스타일 초기화
+   > - ``` <link rel=”stylesheet” href=https://cdn.jsdelivr.net/npm/rest-css@5.0.1/reset.min.css> ```
+  
