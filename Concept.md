@@ -59,6 +59,7 @@
      -  src에 있는 경로가 잘 못되어 액박이 뜨면 alt(alternative)가 화면에 출력
   -  ``` <ul><li>사과</li></ul> ``` : Block 요소
      - Unordered List & List Item : 서로 한 세트
+     - ul>li*4 : li가 4개 자동 완성
   -  ``` <a href="http://www.naver.com" target="_blank">NAVER</a> ``` : Inline 요소
      - 다른 페이지로 이동하는 하이퍼링크 지정
      - ```target="_blank"``` : 새로운 탭에 열겠다 
