@@ -57,9 +57,10 @@
   -  ``` <img src="삽입할 이미지 경로" alt="삽입할 이미지의 이름" /> ```
     -  src, alt는 필수 속성 / Inline 요소
     -  src에 있는 경로가 잘 못되어 액박이 뜨면 alt(alternative)가 화면에 출력
-  -  ``` <ul><li>사과</li></ul> ``` 
+  -  ``` <ul><li>사과</li></ul> ``` : Block 요소
+    - Unordered List & List Item : 서로 한 세트
+  -  ``` <a href="http://www.naver.com">NAVER</a> ``` : I
   -  ``` <ul><li>사과</li></ul> ``` : 특별한 의미가 없는 구분을 위한 요소
-
  #### ``` <html> ``` : 문서의 전체 범위
   - ``` <html lang=”ko”> ``` : 한국어 설정
  #### ``` <head> ``` : 문서의 정보를 나타내는 범위(제목, 설명, 스타일(CSS))
