@@ -51,20 +51,43 @@
 - 주요 요소
   -  ``` <div> ``` : 특별한 의미가 없는 구분을 위한 요소
   -  ``` <h1~6> ```  
-    -  제목을 의미하는 요소(목차) / Block 요소
-    -  숫자가 작을 수록 중요한 제목 정의
+     -  제목을 의미하는 요소(목차) / Block 요소
+     -  숫자가 작을 수록 중요한 제목 정의
   -  ``` <p> ``` : 문장을 의미하는 요소 / Block 요소
   -  ``` <img src="삽입할 이미지 경로" alt="삽입할 이미지의 이름" /> ```
-    -  src, alt는 필수 속성 / Inline 요소
-    -  src에 있는 경로가 잘 못되어 액박이 뜨면 alt(alternative)가 화면에 출력
+     -  src, alt는 필수 속성 / Inline 요소
+     -  src에 있는 경로가 잘 못되어 액박이 뜨면 alt(alternative)가 화면에 출력
   -  ``` <ul><li>사과</li></ul> ``` : Block 요소
-    - Unordered List & List Item : 서로 한 세트
+     - Unordered List & List Item : 서로 한 세트
   -  ``` <a href="http://www.naver.com" target="_blank">NAVER</a> ``` : Inline 요소
-    - 다른 페이지로 이동하는 하이퍼링크 지정
-    - ```target="_blank"``` : 새로운 탭에 열겠다 
+     - 다른 페이지로 이동하는 하이퍼링크 지정
+     - ```target="_blank"``` : 새로운 탭에 열겠다 
   -  ``` <span>동해물</span>과 백두산이 ``` : Inline 요소
-    - 특별한 의미가 없는 구분을 위한 요소    - 동해물 만 어떠한 
-  -  ``` <span>동해물</span>과 백두산이 ``` : Inline 요소
+     - 특별한 의미가 없는 구분을 위한 요소 (동해물 만 어떠한 처리를 하고 싶을 때)
+  - ``` <br/> ``` : 줄바꿈
+  - ``` <input type="text" value="JUNE" /> ``` : Inline-block 요소
+    - 사용자가 데이터를 입력하는 요소 
+    - 기본적으로 Inline 성격으로 수평으로 쌓이지만 가로, 세로, 여백 조정 가능
+    - type -> 글자입력창 
+    - value -> 입력창 안에 기본적으로 입력된 값 
+    - placeholder -> 사용자가 입력할 값의 힌트(이름을 입력하세요)
+    - checkbox(checked -> 미리 체크 되어 있음)
+      - ``` <label><input type="checkbox" checked /> Apple </label> ``` 
+      - ``` <label><input type="checkbox" /> Banana </label> ``` 
+    - radio : 택 1 (name으로 그룹 지정)
+      - ``` <label><input type="radio" name="fruits" /> Apple </label> ``` 
+      - ``` <label><input type="radio" name="fruits" /> Banana </label> ``` 
+   - 테이블 요소
+     ``` <table>
+          <tr>
+           <td>A</td><td>B</td>
+          </tr>
+          <tr>
+           <td>C</td><td>D</td>
+          </tr>
+         </table> ```
+         -> AB
+            CD
  #### ``` <html> ``` : 문서의 전체 범위
   - ``` <html lang=”ko”> ``` : 한국어 설정
  #### ``` <head> ``` : 문서의 정보를 나타내는 범위(제목, 설명, 스타일(CSS))
