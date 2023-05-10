@@ -78,7 +78,8 @@
       - ``` <label><input type="radio" name="fruits" /> Apple </label> ``` 
       - ``` <label><input type="radio" name="fruits" /> Banana </label> ``` 
    - 테이블 요소
-     ``` <table>
+    ``` 
+        <table>
           <tr>
            <td>A</td><td>B</td>
           </tr>
