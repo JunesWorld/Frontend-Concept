@@ -30,14 +30,14 @@
 ## Settings
 - Korean Language : 한국어로 변경 지원
 - Beautify(Prettier) : 자동 정렬 기능
- > 기능 기여도 -> HookyQR 복사
- > Code -> 기본 설정 -> 바로가기 key -> Beautify Selection
- > Auto Rename Tag -> Alt + Cmd + L
+  > 기능 기여도 -> HookyQR 복사
+  > Code -> 기본 설정 -> 바로가기 key -> Beautify Selection
+  > Auto Rename Tag -> Alt + Cmd + L
 - Live Server
- > HTML File에서만 작동
- > 우클릭 -> Open with Live Server
+  > HTML File에서만 작동
+  > 우클릭 -> Open with Live Server
 - 공백 2 설정
- > Code -> 기본설정 -> 설정 -> Editor -> Tab Size 2
+  > Code -> 기본설정 -> 설정 -> Editor -> Tab Size 2
 
 ## VSCode
 - Project 단위 = Folder(Directory)
