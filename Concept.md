@@ -44,7 +44,7 @@
   - File – Open – 폴더 선택
 - 주석 
   - ``` <!-- --> ```
-  - cmd + /
+  - Cmd + L (windows -> Ctrl + /)
 
 ## HTML(Hyper Text Markup Language) : 기획자(구조)
 - 페이지의 제목, 문단, 표, 이미지, 동영상 등 웹의 구조를 담당
