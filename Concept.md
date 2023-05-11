@@ -239,7 +239,22 @@ div { color : red;
               color: red;
              }
             ```
-    - 가상 클래스
+    - 가상 클래스 : 어떠한 행동을 했을 때 동작하는 방식
+      - ABC:hover / 마우스 올리기
+      - ABC:active / 마우스 클릭
+      - ABC:focus / 데이터 입력 받는 형식에서만 동작, 대표적으로 input
+      ```
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        transition: 1s;
+        }
+      .box:hover {
+        width: 300px;
+        background-color: royalblue;
+        }
+       ```
     - 가상 요소
     - 속성
 
