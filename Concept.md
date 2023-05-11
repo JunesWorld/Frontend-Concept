@@ -206,8 +206,39 @@ div { color : red;
       - *(전체 선택자) : 모든 요소를 선택
       - 태그 선택자(div, li...) : 태그 이름으로 요소 선택
       - 클래스 선택자(.fruits) : HTML에서 class 지정(fruits)해주고 선택(CSS에서 앞에 .을 붙인다)
-      - 
+      - 아이디 선택자(#abc) : HTML id 속성의 값이 abc인 요소 선택(CSS에서 앞에 #을 붙인다)
     - 복합
+      - 일치 선택자 : 선택자 ABC와 XYZ를 동시에 만족하는 요소 선택(ex.태그.클래스)
+        ```
+        <sapn class-"orange">오렌지</span>
+        span.orange {
+          color : red;
+         }
+        ```
+       - 자식 선택자 : ABC>XYZ / 해석은 뒤에서 부터 (orange class이지만 ul의 자식인 것만)
+          ```
+          ul>.orange {
+            color: red;
+            }
+          ```
+        - 하위 선택자 : ABC(띄어쓰기)XYZ / div안에 있는 모든 class 요소 선택
+          ```
+          div(띄어쓰기).orange {
+            color: red;
+            }
+           ```
+        - 인접 형제 선택자 : ABC + XYZ / 선택자 ABC의 다음 형제 요소 XYZ "하나" 선택
+          ```
+          .orange + li {
+            color: red;
+            }
+           ```
+         - 일반 형제 선택자 : ABC ! XYZ / 선택자 ABC의 다음 형제 요소 XYZ "모두" 선택
+            ```
+            .orange ~ li {
+              color: red;
+             }
+            ```
     - 가상 클래스
     - 가상 요소
     - 속성
