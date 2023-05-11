@@ -242,19 +242,52 @@ div { color : red;
     - 가상 클래스 : 어떠한 행동을 했을 때 동작하는 방식
       - ABC:hover / 마우스 올리기
       - ABC:active / 마우스 클릭
+        ```
+        .box {
+          width: 100px;
+          height: 100px;
+          background-color: orange;
+          transition: 1s;
+          }
+        .box:hover {
+          width: 300px;
+          background-color: royalblue;
+          }
+        ```
       - ABC:focus / 데이터 입력 받는 형식에서만 동작, 대표적으로 input
-      ```
-      .box {
-        width: 100px;
-        height: 100px;
-        background-color: orange;
-        transition: 1s;
-        }
-      .box:hover {
-        width: 300px;
-        background-color: royalblue;
-        }
-       ```
+        - 데이터 입력 받는 형식이 아닐 때 사용법 : HTML -> tabindex
+          ```
+          <div class="box" tabindex="-1"></div>
+          ```
+      - ABC:first(last)-child / 선택자 ABC가 형제 요소 중 첫째라면 선택 / span태그 중에서 첫번째
+        ```
+        <div class="fruits">
+          <span>딸기</span>
+          <span>수박</span>
+          <div>오렌지</div>
+          <p>망고</p>
+          <h3>사과</h3>
+        </div>
+        ```
+        ```
+        [딸기]
+        .fruits span:first-child {
+          color: red;
+          }
+        ```
+      - ABC:nth-child(n) / 선택자 ABC가 형제 요소 중 (n)번째라면 선택 (짝수:2n / 홀수:2n+1 / 두번째 부터 전부: n+2)
+        ```
+        [수박]
+        .fruits *:nth-child(2) {
+          color: red;
+          }
+        ```
+      - ABC:not(XYZ)
+        ```
+        .fruits *:not(span) {
+          color: red;
+          }
+        ```
     - 가상 요소
     - 속성
 
