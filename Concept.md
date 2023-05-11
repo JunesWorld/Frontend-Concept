@@ -25,7 +25,8 @@
 - 자동 setting : Cmd + alt + L
 - 옆 파일로 이동 : Cmd + shift + [
 - 화면 분할 : Cmd + \
-- 전체 저장 : Alt + cmd + S
+- 전체 저장 : Alt + Cmd + S
+- 내어쓰기 : Shift + Tab
 
 ## Settings
 - Korean Language : 한국어로 변경 지원
@@ -42,15 +43,15 @@
 ## VSCode
 - Project 단위 = Folder(Directory)
   - File – Open – 폴더 선택
-- 주석 
-  - ``` <!-- --> ```
-  - Cmd + L (windows -> Ctrl + /)
 
 ## HTML(Hyper Text Markup Language) : 기획자(구조)
 - 페이지의 제목, 문단, 표, 이미지, 동영상 등 웹의 구조를 담당
 - 쉽게 말해 링크가 걸려있는 파일을 만들 수 있는 곳
 - ! + Enter : HTML 기본 구조 생성
 - ``` <!DOCTYPE html> ``` : 문서(페이지)의 HTML 버전을 지정
+- 주석 
+  - ``` <!-- --> ```
+  - Cmd + L (windows -> Ctrl + /)
 - 주요 요소
   -  ``` <div> ``` : 특별한 의미가 없는 구분을 위한 요소
   -  ``` <h1~6> ```  
@@ -152,11 +153,24 @@
 
 ## CSS(Cascading Style Sheets) : 디자이너(스타일)
  - 실제 화면에 표시되는 방법(색상, 크기, 폰트, 레이아웃)을 지정해 콘텐츠를 꾸며주는 시각적인 표현(정적)을 담당
+ - HTML 요소를 CSS에서 style 변경
  - 작성방법
-  >  div { color : red;   
-             font-size: 100px;
+    - ``` 선택자 {속성 : 값;} ```
+    - 선택자 : 스타일(CSS)을 적용할 대상
+    - 속성 : 스타일(CSS)의 종류
+    - 값 : 스타일(CSS)의 값
+    - : -> 은 / ; -> 이다.
+```
+div { color : red;   
+      font-size: 100px;
         } 
-        
+```
+ - 주석 : Cmd + /
+    -  ``` /* 설명 작성 */ ```
+ 
+ - 선언 방식 
+
+
 ## JavaScript : 개발자(동적)
  - 콘텐츠를 바꾸고 움직이는 등 페이지를 동작시키는 동적 처리를 담당
  - 작성방법
