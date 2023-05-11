@@ -168,8 +168,49 @@ div { color : red;
  - 주석 : Cmd + /
     -  ``` /* 설명 작성 */ ```
  
- - 선언 방식 
-
+ - 선언 방식
+    - 내장 방식 : HTML에 Style의 내용(Contents)으로 스타일을 작성하는 방식 / 권장 X
+       ```
+       <style>
+        div {
+          color: red;
+          margin: 20px;
+          }
+        </style>
+        ```
+    - 인라인 방식 : 요소의 style 속성에 직접 스타일을 작성하는 방식(선택자X) / 권장 X
+        ```
+        <div style="color: red; margin: 20px;"></div>
+        ```
+    - 링크 방식 : ``` <link/> ```로 외부 CSS 문서를 가져와서 연결하는 방식(병렬)
+        ```
+        <link rel="styleshee" href="./css/main.css">
+        ```
+    - @import 방식 : CSS의 @import 규칙으로 CSS 문서 안에서 또 다른 CSS 문서를 가져와 연결하는 방식(직렬) 
+        ```
+        <link rel="styleshhet" href="./css/main.css">
+        [mian.css]
+        @import url("./box.css);
+        div {
+          color: red;
+          margin: 20px;
+          }
+        [box.css]
+        .box {
+          background-color : red;
+          padding: 20px;
+          }
+         ```
+ - 선택자
+    - 기본 
+      - *(전체 선택자) : 모든 요소를 선택
+      - 태그 선택자(div, li...) : 태그 이름으로 요소 선택
+      - 클래스 선택자(.fruits) : HTML에서 class 지정(fruits)해주고 선택(CSS에서 앞에 .을 붙인다)
+      - 
+    - 복합
+    - 가상 클래스
+    - 가상 요소
+    - 속성
 
 ## JavaScript : 개발자(동적)
  - 콘텐츠를 바꾸고 움직이는 등 페이지를 동작시키는 동적 처리를 담당
