@@ -289,6 +289,9 @@ div { color : red;
           }
         ```
     - 가상 요소
+      - ABC::before / 선택자 ABC 요소의 내부 앞에 내용을 삽입
+        ```
+        .
     - 속성
 
 ## JavaScript : 개발자(동적)
