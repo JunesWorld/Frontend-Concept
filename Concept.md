@@ -289,10 +289,55 @@ div { color : red;
           }
         ```
     - 가상 요소
-      - ABC::before / 선택자 ABC 요소의 내부 앞에 내용을 삽입
+      - ABC::before(after) / content 속성 무조건 사용해야함 /선택자 ABC 요소의 내부 앞(뒤)에 내용을 삽입(Inline)
         ```
-        .
+        <div class="box">
+          Content
+        </div>
+        .box::before {
+          content: "앞";
+          display: blcok;(inline->block/가로, 세로 변경 가능하기 위함)
+          width: 30px;
+          height: 30px;
+          }
+         -> 앞 Content(Inline)
+         ```
     - 속성
+      - [ABC] : 속성 ABC를 포함한 요소 선택
+        ```
+        <input type="text" value="June">
+        <input type="password" value="June">
+        <span data-fruit-name="apple">사과</span>
+        ```
+        ```
+        [type] / [type="password"] / [data-fruit-name] {
+          background-color: orange;
+         }
+         ```
+ - 상속되는 CSS 속성들 : 모두(모든X) 글자/문자 관련 속성들!
+    - font-style
+    - font-weight
+    - font-size
+    - line-height
+    - font-family : 폰트(서체)
+    - color
+    - text-align : 정렬
+    - 강제 상속 = inherit / 글자가 아닌 다른 속성들 상속하고 싶을 때 사용
+       ```
+       .parent {
+          width: 300px;
+          height: 200px;
+          background-color: orange;
+         }
+       .child {
+          width:100px;
+          height: inherit;
+          background-color: inherit;
+          position: fixed;
+          top: 100px;
+          right: 10px;
+         }
+       ```
 
 ## JavaScript : 개발자(동적)
  - 콘텐츠를 바꾸고 움직이는 등 페이지를 동작시키는 동적 처리를 담당
