@@ -385,6 +385,19 @@ div { color : red;
       - 단위 : px, em, vw 등 단위로 지정
       - % : 부모 요소의 가로 너비에 대한 비율로 지정 
       - padding-방향 : margin과 동일
+      
+    - border: border-width(선-두께) border-style(선-종류) border-color(선-색상)
+      - 요소의 테두리 선을 지정하는 단축 속성
+      - 기본값 = border: medium none black;
+      - border-width(단위로 사용할 것, margin처럼 방향 지정 가능)
+        - medium
+        - thin
+        - thick
+        - 단위 : px, em, %
+      - border-style(선의 종류)
+        - none
+        - solid : 실선  
+      
  - 단위
     - px : 픽셀
     - % : 상대적 백분율
