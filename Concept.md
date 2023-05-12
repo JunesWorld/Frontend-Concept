@@ -386,7 +386,7 @@ div { color : red;
       - % : 부모 요소의 가로 너비에 대한 비율로 지정 
       - padding-방향 : margin과 동일
       
-    - border: border-width(선-두께) border-style(선-종류) border-color(선-색상)
+    - border: border-width(선-두께) border-style(선-종류) border-color(선-색상) 
       - 요소의 테두리 선을 지정하는 단축 속성
       - 기본값 = border: medium none black;
       - border-width(단위로 사용할 것, margin처럼 방향 지정 가능)
@@ -394,17 +394,50 @@ div { color : red;
         - thin
         - thick
         - 단위 : px, em, %
-      - border-style(선의 종류)
+      - border-style(선의 종류, 방향 지정 가능)
         - none
-        - solid : 실선  
-      
+        - solid : 실선
+        - dashed : 파선 (---)
+        - dotted : 점선 (...) 
+        - double : 두 줄 선
+        - groove : 홈이 파여있는 모양
+        - ridge : 솟은 모양(groove의 반대)
+        - inset :요소 전체가 들어간 모양
+        - outset : 요소 전체가 나온 모양
+      - border-color(방향 지정 가능)
+        - 기본값 : black
+        - transparent : 투명
+      - border-right: 두께 종류 색상;
+      - border-right-widht: 두께;
+      - border-right-style: 종류;
+      - border-right-color: 색상; 
+      - border-radius : 요소의 모서리를 둥글게 깎음(border-raidus: 0 10px 0 0; -> 오른쪽 모서리)
+    
+    - box-sizing : 가로, 세로 너비 그대로 사용하고 싶다면 border-box 사용
+      - box-sizing: border-box; 
+      - content-box(기본값) : 요소의 내용(content)으로 크기 계산
+      - border-box : 요소의 내용 + padding + border로 크기 계산
  - 단위
     - px : 픽셀
     - % : 상대적 백분율
     - em : 요소의 글꼴 크기
     - rem : 루트(최상위) 요소(HTML)의 글꼴 크기
     - vw : 뷰포트 가로 너비의 백분율
-    - vh : 뷰포트 세로 너비의 백분율  
+    - vh : 뷰포트 세로 너비의 백분율
+ 
+ - 색상 표현
+    - 색상이름
+      - 브라우저에서 제공하는 색상 이름
+      - red, tomato, royalblue...
+    - HEX 색상 코드(추천!)
+      - 16진수 색상(Hexadecimal Colors)
+      - #000, #FFFFFF
+    - RGB
+      - 빛의 삼원색
+      - rgb(255, 255, 255)
+    - RGBA
+      - 빛의 삼원색 + 투명도
+      - rgba(0, 0, 0, 0~1(투명도)) 
 ---
 
 ## JavaScript : 개발자(동적)
