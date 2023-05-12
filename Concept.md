@@ -338,6 +338,24 @@ div { color : red;
           right: 10px;
          }
        ```
+ - 우선순위
+     ```
+     <div
+        id="color_yellow"
+        class="color_green"
+        style="color: orange;"> -> 인라인 선언(1000점)
+        Hello World!
+     </div>
+     
+     -> Hello World는 무슨 색으로 출력?
+     
+     div {color: red !important; } -> !important(가장 높은 점수!)
+     #color_yellow {color: yellow; } -> ID선택자(100점)
+     .color_green {color: green; } -> Class선택자(10점)
+     div {color: blue; } -> Tag선택자(1점)
+     * {color: darkblue; } -> 전체선택자(0점)
+     body {color: violet; } -> 상속(X)
+     ```
 
 ## JavaScript : 개발자(동적)
  - 콘텐츠를 바꾸고 움직이는 등 페이지를 동작시키는 동적 처리를 담당
