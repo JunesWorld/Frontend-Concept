@@ -43,6 +43,7 @@
 ## VSCode
 - Project 단위 = Folder(Directory)
   - File – Open – 폴더 선택
+---
 
 ## HTML(Hyper Text Markup Language) : 기획자(구조)
 - 페이지의 제목, 문단, 표, 이미지, 동영상 등 웹의 구조를 담당
@@ -150,6 +151,8 @@
   - 위에서 아래로 수직으로 쌓인다
   - 가로 너비는 최대한 늘어나려하고 세로 너비는 최대한 줄어든다. 
   - 블록 요소 안에 인라인, 블록 요소 모두 포함 가능
+
+---
 
 ## CSS(Cascading Style Sheets) : 디자이너(스타일)
  - 실제 화면에 표시되는 방법(색상, 크기, 폰트, 레이아웃)을 지정해 콘텐츠를 꾸며주는 시각적인 표현(정적)을 담당
@@ -356,11 +359,44 @@ div { color : red;
      * {color: darkblue; } -> 전체선택자(0점)
      body {color: violet; } -> 상속(X)
      ```
+ - 속성(Properties)
+    - Inline요소(ex.span) : 줄어들려고 함
+    - Block요소(ex.div) : 늘어나려고 함
+    - width, height : 요소의 가로/세로 너비
+      - 기본값 : auto(브라우저가 너비를 계산)
+      - 단위 : px, em, vw 등 단위로 지정
+      - max-width,height : 기본값 = none
+      - min-width,height : 기본값 = 0
+      
+    - margin : 요소의 외부 여백(공간)을 지정하는 단축 속성(음수로 사용 가능)
+      - margin-top/right/bottom/left
+         ```
+         margin: 10px(top,bottom) 20px(left, right);
+         margin: 10px(top) 20px(left, right) 30px(bottom);
+         margin: 10px(top) 20px(right) 30px(bottom) 40px(left); -> 시계방향
+         ```
+      - 0 : 외부 여백 없음
+      - auto : 브라우저가 여백을 계산(가운데 정렬)
+      - 단위 : px, em, vw 등 단위로 지정
+      - % : 부모 요소의 가로 너비에 대한 비율로 지정   
+       
+    - padding : 요소의 내부 여백(공간)을 지정하는 단축 속성
+      - 0 :  
+ - 단위
+    - px : 픽셀
+    - % : 상대적 백분율
+    - em : 요소의 글꼴 크기
+    - rem : 루트(최상위) 요소(HTML)의 글꼴 크기
+    - vw : 뷰포트 가로 너비의 백분율
+    - vh : 뷰포트 세로 너비의 백분율  
+---
 
 ## JavaScript : 개발자(동적)
  - 콘텐츠를 바꾸고 움직이는 등 페이지를 동작시키는 동적 처리를 담당
  - 작성방법
   > ``` Console.log(‘console에 찍힐 내용’); ```
+
+---
 
 ## 개발자 도구(F12)
  - 구성 요소 보는 법
@@ -377,6 +413,8 @@ div { color : red;
   > -	Styles -> hov (호버) :hover
   > - Couputed : CSS 적용된 내용 값 확인 가능
 
+  ---
+  
 ## Project 시작 전 할 일
   - CSS, JS, Images 폴더 생성 후 관리 
   - ** html은 폴더 만들지 말 것 **
