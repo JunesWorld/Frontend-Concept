@@ -427,10 +427,31 @@ div { color : red;
       - scroll 보다는 auto 사용
 
     - display : 요소의 화면 출력(보여짐) 특성
-      - 
+      - inline 요소에서 block 요소를 사용해야할 때 : display: block;
       - block / inline / inline-block : 각 요소에 이미 지정되어 있는 값
       - flex(1차원 레이아웃) / grid(2차원 레이아웃) / none(보이짐x, 화면에서 사라짐) : 따로 지정해서 사용하는 값
       - 기타 : table, table-row, table-cell ...
+
+    - opacity : 요소 투명도
+      - 기본값 : 불투명
+      - 0~1 사이의 소수점 숫자
+   
+    - 글꼴
+      - font-style : 글자의 기울기
+        - 기본값 : normal
+        - italic : 이텔릭체
+      - font-weight : 글자의 두께(100단위)
+        - 기본값 : normal, 400
+        - bold, 700 : 두껍게
+      - font-size : 글자의 크기
+        - 기본값 : 16px
+        - 단위 : px, em, rem
+      - line-height : 한 줄의 높이, 행간과 유사
+        - 기본값 : 브라우저의 기본 정의를 사용
+        - 숫자(권장) : 요소의 글꼴 크기의 배수로 지정
+        - 단위 : px, em, rem, % 
+      - 
+
  - 단위
     - px : 픽셀
     - % : 상대적 백분율
