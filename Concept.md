@@ -448,9 +448,31 @@ div { color : red;
         - 단위 : px, em, rem
       - line-height : 한 줄의 높이, 행간과 유사
         - 기본값 : 브라우저의 기본 정의를 사용
-        - 숫자(권장) : 요소의 글꼴 크기의 배수로 지정
+        - 숫자(권장) : 요소의 글꼴 크기의 "배수"로 지정(ex.20px -> 20배)
         - 단위 : px, em, rem, % 
-      - 
+      - font-family: 글꼴1, "글꼴2", ...글꼴계열(필수로 작성!);
+        - 글꼴(서체) 지정
+        - 글꼴이 많이 지정해 놓는 이유는 없을 경우 사용하기 위함
+        - 글꼴에 띄어쓰기가 있을 때는 ""로 묶어서 명시
+        - 글꼴 계열
+          - serif : 바탕체
+          - sans-serif : 고딕체 계열
+          - monospace(추천!) : 고정너비(가로폭이 동등) 글꼴
+          - cursive : 필기체 계열
+          - fantasy : 장식 글꼴 계열
+
+    - 문자
+      - color : 글자의 색상
+        - 기본값(검정색) : rgb(0, 0, 0)
+      - text-align : 문자의 정렬 방식
+        - left / right /center /justify(양쪽 정렬)
+      - text-decoration : 문자의 장식(선)
+        - none / underline / overline / line-through(중앙선)
+        - a 태그에는 기본적으로 밑줄이 추가되어 있기 때문에 none을 사용해야한다
+      - text-indent : 문자 첫 줄의 들여쓰기
+        - 내어쓰기(outdent) : 음수를 사용
+        - 들여쓰기 없음 : 0
+        - px, em, rem 
 
  - 단위
     - px : 픽셀
