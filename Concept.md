@@ -507,13 +507,21 @@ div { color : red;
         - relative : 요소 자신을 기준
           - 위치를 조정하면 relative가 사용된 영역은 그대로 확보하고 있다 
         - absolute : 위치 상 부모 요소를 기준
+          - absolute를 사용했다면 부모 요소에 position값이 있어야하는데 relative가 가장 무난하다
           - 1, 2(absolute), 3 : 2번은 이제 1, 3번과 상호작용 X -> 공중에 떠 있게 출력
           - 조상 요소 = relative / 부모 요소 = static -> 조상 요소 기준으로 배치
+          - 조상요소에도 없다면 기준 position이 나올 때까지 올라간다
         - fixed : 뷰포트(브라우저)를 기준
+          - 항상 화면에 고정되는 기능
       - 위치(숫자값으로도 설정 가능, 음수도 가능) : top / bottom / left / right / z-index 
         - 요소의 각 방향별 거리 지정
         - 기본값 : auto(브라우저가 계산)
         - 단위 : px, em, rem
+      - 요소 쌓임 순서(Stack Order) : 어떤 요소가 사용자와 더 가깝게 있는지(위에 쌓이는지) 결정
+        1. 요소에 position 속성의 값이 있는 경우 위에 쌓임(기본값 static 제외 / relative, absolute, fixed)
+        2. 1번 조건이 같은 경우, z-index 속성의 숫자 값이 높을 수록 위로 쌓임
+        3. 1번과 2번 조건까지 같은 경우, HTML에서 늦게 작성된 것일 수록 위에 쌓임
+        - z-index : 
 
 
  - 단위
