@@ -503,7 +503,7 @@ div { color : red;
 
     - 배치(기준을 먼저 잡고 위치 값을 설정해야한다)
       - position : 요소의 위치 지정 기준
-        - 기본값 : static
+        - 기본값 : static(position 속성이 없다고 보면 되고 배치 할 수 있는 기준이 없다)
         - relative : 요소 자신을 기준
           - 위치를 조정하면 relative가 사용된 영역은 그대로 확보하고 있다 
         - absolute : 위치 상 부모 요소를 기준
@@ -521,7 +521,11 @@ div { color : red;
         1. 요소에 position 속성의 값이 있는 경우 위에 쌓임(기본값 static 제외 / relative, absolute, fixed)
         2. 1번 조건이 같은 경우, z-index 속성의 숫자 값이 높을 수록 위로 쌓임
         3. 1번과 2번 조건까지 같은 경우, HTML에서 늦게 작성된 것일 수록 위에 쌓임
-        - z-index : 
+        - z-index : 요소의 쌓임 정도를 지정(숫자가 커지지 않게 잘 관리해야한다)
+          - auto(=0) : 부모 요소와 동일한 쌓임 정도
+          - 숫자 : 숫자가 높을 수록 위에 쌓임
+       - position 속성의 값으로 absolute, fixed가 지정된 요소는 display 속성이 block으로 변경됨 (relative는 안된다!)
+          - 가로 세로 값을 가질 수 있음
 
 
  - 단위
