@@ -474,6 +474,48 @@ div { color : red;
         - 들여쓰기 없음 : 0
         - px, em, rem 
 
+    - 배경
+      - background-color : 요소의 배경 색상
+        - 기본값 : transparent(투명한)
+        - 지정 가능한 색상
+      - background-image : 요소의 배경 이미지 삽입
+        - 기본값 : none
+        - url("경로") : 이미지 경로
+      - background-repeat : 일반적으로 배경 이미지는 반복되어 나타나기 때문에 제어
+        - 기본값 : repeat(이미지를 수직, 수평 반복)
+        - repeat-x : 수평 반복
+        - repeat-y : 수직 반복
+        - no-repeat : 반복 없음
+      - background-position : 요소의 배경 이미지 위치
+        - 기본값 : 0% 0% (0~100% 사이의 값)
+        - 방향 : top / bottom / left / right / center
+          - background-position: top right; -> 오른쪽 위
+        - 단위(x축, y축) : px, em, rem
+      - background-size : 요소의 배경 이미지 크기
+        - 기본값 : auto(이미지의 실제 크기)
+        - 단위 : px, em, rem
+        - cover : 비율을 유지, 요소의 더 넓은 너비에 맞춤
+        - contain : 비율을 유지 요소의 더 짧은 너비에 맞춤
+      - background-attachment : 요소의 배경 이미지 스크롤 특성
+        - 기본값 : scroll(이미지가 요소를 따라서 같이 스크롤)
+        - fixed : 이미지가 뷰포트에 고정, 스크롤X
+        - local : 요소 내 스크롤 시 이미지가 같이 스크롤 
+
+    - 배치(기준을 먼저 잡고 위치 값을 설정해야한다)
+      - position : 요소의 위치 지정 기준
+        - 기본값 : static
+        - relative : 요소 자신을 기준
+          - 위치를 조정하면 relative가 사용된 영역은 그대로 확보하고 있다 
+        - absolute : 위치 상 부모 요소를 기준
+          - 1, 2(absolute), 3 : 2번은 이제 1, 3번과 상호작용 X -> 공중에 떠 있게 출력
+          - 조상 요소 = relative / 부모 요소 = static -> 조상 요소 기준으로 배치
+        - fixed : 뷰포트(브라우저)를 기준
+      - 위치(숫자값으로도 설정 가능, 음수도 가능) : top / bottom / left / right / z-index 
+        - 요소의 각 방향별 거리 지정
+        - 기본값 : auto(브라우저가 계산)
+        - 단위 : px, em, rem
+
+
  - 단위
     - px : 픽셀
     - % : 상대적 백분율
