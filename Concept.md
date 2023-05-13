@@ -427,9 +427,10 @@ div { color : red;
       - scroll 보다는 auto 사용
 
     - display : 요소의 화면 출력(보여짐) 특성
+      - 
       - block / inline / inline-block : 각 요소에 이미 지정되어 있는 값
       - flex(1차원 레이아웃) / grid(2차원 레이아웃) / none(보이짐x, 화면에서 사라짐) : 따로 지정해서 사용하는 값
-      - 
+      - 기타 : table, table-row, table-cell ...
  - 단위
     - px : 픽셀
     - % : 상대적 백분율
