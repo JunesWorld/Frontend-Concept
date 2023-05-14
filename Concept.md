@@ -553,12 +553,23 @@ div { color : red;
             - space-around : 각 Flex Item의 외부 여백을 균등하게 정렬
           - align-content : 교차 축의 "여러 줄" 정렬 방법(수직 정렬)
              ```
-              
+             [위에서부터 정렬]
+             display: flex;
+             flex-wrap: wrap;
+             align-content: flex-start;
+             ```
+            - 조건 
+              - Items들이 두 줄 이상이어야한다.
+              - flex-wrap: wrap; 이 있어야 한다. 
             - 기본값 : stretch(Flex Items를 시작점으로 정렬)
             - flex-start : Flex Items를 시작점으로 정렬
             - flex-end : Flex Items를 끝점으로 정렬
             - center : Flex Items를 가운데 정렬
-          - align-items
+          - align-items : 교차 축의 "한 줄" 정렬 방법
+            - 기본값 : stretch(Flex Items를 교차 축으로 늘림)
+            - flex-start : Flex Items를 각 줄의 시작점으로 정렬
+            - flex-end : Flex Items를 각 줄의 끝점으로 정렬
+            - center : Flex Items를 각 줄의 가운데 정렬
       - Flex items = Flex Container가 된 자식 요소들
         - 속성
           - order
