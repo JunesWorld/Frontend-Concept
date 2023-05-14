@@ -665,7 +665,18 @@ div { color : red;
           - rotate(degree) : 회전(각도)
           - skewX(x) : 기울임(x축)
           - skewX(y) : 기울임(y축)
-       - 3
+       - 3D 변환 함수
+          - rotateX(x) : 회전(x축)
+          - rotateY(y) : 회전(y축)
+          - perspective(n) : 원근법(거리) / 단위 : px (perspective 함수)
+            - 제일 앞에 작성해야 함!
+            - transform: perspective(500px) rotate(45deg);
+            - (추천!!) 또는, 부모요소에 추가하여 원근법 표현 (perspective 속성)
+              - perspective: 500px;
+              - transform: rotateY(45deg);
+          - backface-visibility : 3D 변환으로 회전된 요소의 뒷면 숨김 여부
+            - 기본값 : visible
+            - hidden
 
  - 단위
     - px : 픽셀
