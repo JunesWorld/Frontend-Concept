@@ -619,7 +619,9 @@ div { color : red;
           width: 100px;
           height: 100px;
           background-color: orange;
-          transition: width 1s;
+          transition: 
+            width .5s;
+            background-color 2s;
         }
         div:active {
           width: 300px;
@@ -632,7 +634,38 @@ div { color : red;
         - transition-property : 전환 효과를 사용할 속성 이름을 지정
           - 기본값 : all(모든 속성에 적용)
           - 속성이름 : 전환 효과를 사용할 속성 이름 명시
-        - transition-duration : 
+        - transition-duration : 전환 효과의 지속시간을 지정
+          - 기본값 : 0s (전환 효과 없음)
+          - 시간 : 지속시간(s)을 지정
+        - transition-timing-function : 전환 효과의 타이밍(Easing) 함수를 지정
+          - [Google] easing functions / + mdn / tweenmax easing(GreemnSock) -> Easing 함수 치트 시트 참고
+          - 기본값 : ease(느리게 - 빠르게 - 느리게)
+            - cubic-bezier(0.25, 0.1, 0.25, 1)
+          - linear : 일정하게
+          - ease-in : 느리게 - 바쁘게
+          - ease-out : 빠르게 - 느리게
+          - ease-in-out : 느리게 - 빠르게 - 느리게
+          - cubic-bezier(n, n, n, n) : 자신만의 값을 정의
+          - steps(n) : n번 분할된 애니메이션
+        - transition-delay : 전환 효과가 몇 초 뒤에 시작할지 대기시간 설정
+          - 기본값 : 0s
+          - 시간 : 대기시간(s)을 지정
+
+    - 변환
+      - transform: 변환함수1 변환함수2 변환함수3 ...;
+      - transform: 원근법 이동 크기 회전 기울임;
+      - 2D 변환 함수
+        - 단위 : px
+          - translate(x, y) : 이동(x축, y축)
+          - translateX(x) : 이동(x축)
+          - translateY(y) : 이동(y축)
+        - 단위 : 없음(배수) / 숫자
+          - scale(x, y) : 크기(x축, y축)
+        - 단위 : deg
+          - rotate(degree) : 회전(각도)
+          - skewX(x) : 기울임(x축)
+          - skewX(y) : 기울임(y축)
+       - 3
 
  - 단위
     - px : 픽셀
