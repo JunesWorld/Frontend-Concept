@@ -611,7 +611,28 @@ div { color : red;
             - 기본값 : auto(요소의 Content 너비)
             - 단위 : px, em, rem
           - align-self
-       
+
+    - 전환
+      - transition : 요소의 전환(시작과 끝) 효과를 지정하는 단축 속성
+        ```
+        div {
+          width: 100px;
+          height: 100px;
+          background-color: orange;
+          transition: width 1s;
+        }
+        div:active {
+          width: 300px;
+          background-color: royalblue;
+        }
+        ```
+        - trainsition: [속성명] [지속시간] [타이밍함수] [대기시간];
+        - trainsition-property/duration/timing-function/delay
+        - 지속시간(duration) : 단축형으로 작성할 때, 필수포함 속성!
+        - transition-property : 전환 효과를 사용할 속성 이름을 지정
+          - 기본값 : all(모든 속성에 적용)
+          - 속성이름 : 전환 효과를 사용할 속성 이름 명시
+        - transition-duration : 
 
  - 단위
     - px : 픽셀
