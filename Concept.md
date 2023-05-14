@@ -527,6 +527,28 @@ div { color : red;
        - position 속성의 값으로 absolute, fixed가 지정된 요소는 display 속성이 block으로 변경됨 (relative는 안된다!)
           - 가로 세로 값을 가질 수 있음
 
+    - 플렉스 : 수직으로 있던 요소들이 수평으로 정렬
+      - Flex Container = display:flex; 값이 있는 곳(부모 요소)
+        - 속성
+          - display : Flex Container의 화면 출력(보여짐) 특성
+            - Container를 만들어야하고 그 안 속성에 display:flex;가 있어야 한다
+            - flex : 블록 요소와 같이 Flex Container 정의(Block요소이기 때문에 밑으로 쌓임)
+            - index-flex : 인라인 요소와 같이 Flex Container 정의(container가 inline 요소처럼 동작 할 수 있게 한다 -> 옆으로 쌓임)
+          - flex-flow
+          - flex-direction : 주 축을 설정
+            - 
+          - flex-wrap
+          - justify-content
+          - align-content
+          - align-items
+      - Flex items = Flex Container가 된 자식 요소들
+        - 속성
+          - order
+          - flex
+          - flex-grow
+          - flex-shrink
+          - flex-basis
+          - align-self
 
  - 단위
     - px : 픽셀
