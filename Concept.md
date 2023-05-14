@@ -535,11 +535,29 @@ div { color : red;
             - flex : 블록 요소와 같이 Flex Container 정의(Block요소이기 때문에 밑으로 쌓임)
             - index-flex : 인라인 요소와 같이 Flex Container 정의(container가 inline 요소처럼 동작 할 수 있게 한다 -> 옆으로 쌓임)
           - flex-flow
-          - flex-direction : 주 축을 설정
-            - 
-          - flex-wrap
-          - justify-content
-          - align-content
+          - flex-direction : 주 축을 설정(수평정렬(row) or 수직정렬(column))
+            - 기본값 : row(행 축 / 좌->우)
+            - row-reverse : 행 축 / 우->좌
+            - column : 열 축 / 위->아래
+            - column-reverse : 열 축 / 아래->위
+          - flex-wrap : Flex Items 묶음(줄 바꿈) 여부
+            - 한 줄로 정렬하는 속성 때문에 넘치는 경우가 있다. 이 때 넘치는 부분은 줄 바꿈!
+            - 기본값 : nowrap(묶음, 요소들의 줄 바꿈 없음) -> 한 줄로만 정렬
+            - wrap : 여러 줄로 묶음
+            - wrap-reverse : wrap의 반대 방향으로 묶음
+          - justify-content : 주 축의 정렬 방법(수평 정렬)
+            - 기본값(왼쪽 정렬) : flex-start(Flex Items를 시작점으로 정렬)
+            - flex-end(오른쪽 정렬) : Flex Items를 끝점으로 정렬
+            - center(가운데 정렬) : Felx Items를 가운데 정렬
+            - space-between : 각 Flex Item 사이를 균등하게 정렬
+            - space-around : 각 Flex Item의 외부 여백을 균등하게 정렬
+          - align-content : 교차 축의 "여러 줄" 정렬 방법(수직 정렬)
+             ```
+              
+            - 기본값 : stretch(Flex Items를 시작점으로 정렬)
+            - flex-start : Flex Items를 시작점으로 정렬
+            - flex-end : Flex Items를 끝점으로 정렬
+            - center : Flex Items를 가운데 정렬
           - align-items
       - Flex items = Flex Container가 된 자식 요소들
         - 속성
