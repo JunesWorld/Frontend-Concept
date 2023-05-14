@@ -529,6 +529,17 @@ div { color : red;
 
     - 플렉스 : 수직으로 있던 요소들이 수평으로 정렬
       - Flex Container = display:flex; 값이 있는 곳(부모 요소)
+        - 정 가운데 정렬 예시
+          ```
+          .container {
+            width: 500px;
+            height: 300px;
+            background-color: royalblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          ``` 
         - 속성
           - display : Flex Container의 화면 출력(보여짐) 특성
             - Container를 만들어야하고 그 안 속성에 display:flex;가 있어야 한다
@@ -570,14 +581,37 @@ div { color : red;
             - flex-start : Flex Items를 각 줄의 시작점으로 정렬
             - flex-end : Flex Items를 각 줄의 끝점으로 정렬
             - center : Flex Items를 각 줄의 가운데 정렬
-      - Flex items = Flex Container가 된 자식 요소들
+            ```
+            [수직 상단 정렬]
+            display: flex;
+            align-items: flex-start;
+          
+            [수직 가운데 정렬]
+            display: flex;
+            align-items: center;
+          
+            [수직 하단 정렬]
+            display: flex;
+            align-items: end;
+            ```
+      - Flex items = Flex Container가 된 자식 요소들(한 줄 일 때 사용)
         - 속성
-          - order
+          - order : Flex Item의 순서(음수 가능)
+            - 기본값 : 0(순서 없음)
+            - 숫자 : 숫자가 작을 수록 앞에 정렬
           - flex
-          - flex-grow
-          - flex-shrink
-          - flex-basis
+          - flex-grow : Flex Item의 증가 너비 비율(비율을 넣어주면 남는 부분 채운다)
+            - 기본값 : 0(증가 비율 없음)
+            - 숫자 : 증가 비율
+          - flex-shrink : Flex Item의 감소 너비 비율
+            - 기본값 : 1 (Flex container 너비에 따라 감소 비율 적용)
+            - 숫자 : 감소 비율
+            - 요소들이 찌그러지는 현상을 막고 싶을 때 = flex-shrink: 0;
+          - flex-basis : Flex Items의 공간 배분 전 기본 너비
+            - 기본값 : auto(요소의 Content 너비)
+            - 단위 : px, em, rem
           - align-self
+       
 
  - 단위
     - px : 픽셀
