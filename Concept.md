@@ -710,6 +710,97 @@ div { color : red;
     - snake_case
     - camelCase
     - ParcelCase
+ - Zero-based Numbering
+    - 0기반 번호 매기기!
+    - 특수한 경우를 제외하고 0부터 숫자를 시작
+ - 주석(Comments) : Cmd + /
+    - 한 줄 메모 : // or /* */
+    - 여러 줄 메모
+      ```
+      /**
+       * 여러 줄
+       * 메모1
+       * 메모2
+       * /
+      ```
+ - 데이터 종류 : let = 변수선언
+    - index.html
+      ```
+      <head>
+      <script src="./main.js"></script>
+      </head>
+      ```
+    - main.js
+   ```
+   // String(문자 데이터)
+   // 따옴표를 사용합니다.
+   let myName = "June";
+   let email = 'june@gmail.com';
+   (보간법=다른 데이터를 넣는 것) let hello = `Hello ${myName}?!`
+   
+   console.log(myName); // June
+   console.log(email); // june@gmail.com
+   console.log(hello); // Hello June?!
+   ```
+   ```
+   // Number(숫자 데이터)
+   // 정수 및 부동 소수점 숫자를 나타냅니다.
+   // 따옴표로 묶여 있으면 문자 데이터
+   let number = 123;
+   let opacity = 1.57;
+   
+   console.log(number); // 123
+   console.log(opacity) // 1.57
+   ```
+   ```
+   // Boolean
+   // true, false
+   let checked = true;
+   let isShow = false;
+   
+   console.log(checked); // true
+   console.log(isShow); // false
+   ```
+   ```
+   // Undefined
+   // 값이 할당되지 않은 상태를 나타냅니다.
+   let undef;
+   let obj = { abc: 123 };
+   
+   console.log(undef); // undefined
+   console.log(obj.abc); // 123
+   console.log(obj.xyz); // undefined
+   ```
+   ```
+   // Null
+   // 어떤 값이 "의도적으로" 비어있음을 의미
+   let empty = null;
+   
+   console.log(empty); // null
+   ```
+   ```
+   // Object(객체 데이터)
+   // 여러 데이터를 Key:Value 형태롤 저장. { }
+   let user = {
+    // Key : Value
+    name: 'June',
+    age: 30,
+    isValid: true
+   };
+   
+   console.log(user.name); // June
+   console.log(user.age); // 30
+   console.log(user.isValid); // true
+   ```
+   ```
+   // Array(배열 데이터)
+   // 여러 데이터를 순차적으로 저장. [ ]
+   let fruits = ['Apple', 'Bannana', 'Cherry'];
+   
+   console.log(fruits[0]); // 'Apple'
+   console.log(fruits[1]); // 'Bannana'
+   console.log(fruits[2]); // 'Cherry'
+   ```
 
 ---
 
