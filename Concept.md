@@ -704,7 +704,8 @@ div { color : red;
 ## JavaScript : 개발자(동적)
  - 콘텐츠를 바꾸고 움직이는 등 페이지를 동작시키는 동적 처리를 담당
  - 작성방법
-  > ``` Console.log(‘console에 찍힐 내용’); ```
+    > ``` Console.log(‘console에 찍힐 내용’); ```
+ - 
 
 ---
 
