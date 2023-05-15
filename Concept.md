@@ -705,7 +705,11 @@ div { color : red;
  - 콘텐츠를 바꾸고 움직이는 등 페이지를 동작시키는 동적 처리를 담당
  - 작성방법
     > ``` Console.log(‘console에 찍힐 내용’); ```
- - 
+ - 표기법
+    - dash-case(kebab-case)
+    - snake_case
+    - camelCase
+    - ParcelCase
 
 ---
 
