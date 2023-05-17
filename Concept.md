@@ -45,6 +45,35 @@
 ## VSCode
 - Project 단위 = Folder(Directory)
   - File – Open – 폴더 선택
+
+---
+
+## 개발자 도구(F12)
+ - 구성 요소 보는 법
+    - Elements –> 맨 왼쪽 –> 알고 싶은 구성요소에 마우스
+ - Image 가져오기
+    - 원하는 Logo click
+    - Styles –> Image URL 우클릭 –> Open In a New Tab –> 저장
+    - 작업하고 있는 Project File에 Image 저장
+    - ``` <body> ``` 부에 작성
+      - ``` <img src=”./(경로)” alt=”(오류 시 대체 글자)”> ```  
+      - 경로 -> 이미지 저장한 경로 or Open In a New Tab 경로
+ - Elements
+    - Styles에서 임시로 바꿔 볼 수 있다.
+    -	Styles -> hov (호버) :hover
+    - Couputed : CSS 적용된 내용 값 확인 가능
+
+  ---
+  
+## Project Tip
+  - CSS, JS, Images 폴더 생성 후 관리 
+  - ** html은 폴더 만들지 말 것 **
+  - Reset.css.cdn 
+      - 브라우저 마다 기본적으로 적용되는 요소들이 있다. 예를 들어 너비 등이 있는데 이것을 초기화 시킬 때 사용 
+      - jsdelivr Github 사용
+      - ``` <head> ``` 안쪽에 넣으면 CSS 스타일 초기화
+      - ``` <link rel=”stylesheet” href=https://cdn.jsdelivr.net/npm/rest-css@5.0.1/reset.min.css> ```
+  - 빈 Tag에는 "/" 넣는 습관! 
 ---
 
 ## HTML(Hyper Text Markup Language) : 기획자(구조)
@@ -1004,31 +1033,5 @@ div { color : red;
     console.log(b); // ~olleH
     ```
 
----
 
-## 개발자 도구(F12)
- - 구성 요소 보는 법
-  > Elements –> 맨 왼쪽 –> 알고 싶은 구성요소에 마우스
- - Image 가져오기
-  > - 원하는 Logo click
-  > - Styles –> Image URL 우클릭 –> Open In a New Tab –> 저장
-  > - 작업하고 있는 Project File에 Image 저장
-  > - ``` <body> ``` 부에 작성
-   > - ``` <img src=”./(경로)” alt=”(오류 시 대체 글자)”> ```  
-   > - 경로 -> 이미지 저장한 경로 or Open In a New Tab 경로
- - Elements
-  > - Styles에서 임시로 바꿔 볼 수 있다.
-  > -	Styles -> hov (호버) :hover
-  > - Couputed : CSS 적용된 내용 값 확인 가능
-
-  ---
-  
-## Project 시작 전 할 일
-  - CSS, JS, Images 폴더 생성 후 관리 
-  - ** html은 폴더 만들지 말 것 **
-  - Reset.css.cdn 
-   > - 브라우저 마다 기본적으로 적용되는 요소들이 있다. 예를 들어 너비 등이 있는데 이것을 초기화 시킬 때 사용 
-   > - jsdelivr Github 사용
-   > - ``` <head> ``` 안쪽에 넣으면 CSS 스타일 초기화
-   > - ``` <link rel=”stylesheet” href=https://cdn.jsdelivr.net/npm/rest-css@5.0.1/reset.min.css> ```
   
