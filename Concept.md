@@ -984,6 +984,11 @@ div { color : red;
     console.log(boxEl.textContent); // JUNE?!
     ```
 
+ - 메소드 체이닝
+    ```
+    const a = 'Hell~';
+    // split: 
+
 ---
 
 ## 개발자 도구(F12)
