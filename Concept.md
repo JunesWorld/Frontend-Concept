@@ -803,6 +803,7 @@ div { color : red;
       ```
  - 변수 : 데이터를 저장하고 참조(사용)하는 데이터의 이름
     - var, let(추천!), const(추천!)
+    - 보통은 재할당이 불가능한 const 사용하고, 재할당이 필요한 경우 let으로 변경하여 사용
       ```
       // 재사용이 가능!
       // 변수 선언!
@@ -813,7 +814,112 @@ div { color : red;
       console.log(a - b); // -3
       console.log(a * b); // 10
       console.log(a / b); // 0.4
+      
+      // 값(데이터)의 재할당 불가! = const / let(재할당 가능)
+      const(a) = 12;
+      console.log(a); // 12
+      
+      a = 999;
+      console.log(a); // TypeError: Assignment to constant variable.
       ```
+ - 예약어 : 특별한 의미를 가지고 있어, 변수나 함수 이름 등으로 사용할 수 없는 단어
+    - Editor가 판별해줌!
+      ```
+      let this = 'Hello!'; // SyntaxError
+      let if = 123; // SyntaxError
+      let break = true; // SyntaxError
+      ```
+
+ - 함수 : 특정 동작(기능)을 수행하는 일부 코드의 집합(부분)
+      ```
+      function helloFunc() {
+        // 실행 코드
+        console.log(1234);
+      }
+      
+      // 함수 호출
+      helloFunc(): // 1234
+      
+      ---
+      
+      function returnFunc() {
+        return 123;
+      }
+      
+      let a = returnFunc();
+      
+      console.log(a); // 123
+      ---
+      
+      // 함수 선언!
+      function sum(a,b) { // a와 b는 매개변수(Parameters)
+        return a + b;
+      }
+      
+      // 재사용!
+      let a = sum(1, 2); // 1과 2는 인수(Arguments)
+      let b = sum(7, 12);
+      let c = sum(2, 4);
+      
+      console.log(a, b, c); // 3, 19, 6
+      ---
+      
+      // 기명(이름이 있는) 함수
+      // 함수 선언!
+      function hello() {
+        console.log('Hello~');
+      }
+      
+      // 익명(이름이 없는) 함수
+      // 함수 표현!
+      let world = function () {
+        console.log('World~');
+      }
+      
+      // 함수 호출!
+      hello(); // Hello~
+      world(); // World~
+      
+      ---
+      
+      // 객체 데이터
+      const june = {
+        name: 'JUNE',
+        age: 85,
+        // 메소드(Method)
+        getName: function () {
+          return this.name;
+        }
+      };
+      
+      const hisNmae = june.getName();
+      console.log(hisName); // JUNE
+      // 혹은
+      console.log(june.getName()); // JUNE
+       
+      ```
+ - 조건문 : 조건의 결과(truthy, falsy)에 따라 다른 코드를 실행하는 구문(if, else)
+      ```
+      let isShow = true;
+      let checked = false;
+      
+      if (isShow) {
+        console.log('Show!'); // Show!
+      }
+      
+      if (checked) {
+        console.log('Checked!');
+      }
+      ```
+
+ - DOM API : JavaScript로 HTML을 제어하는 여러가지 명령
+    - DOM = Document Object Model
+      - Document = HTML
+      - Object Modle = div / sapn / input
+    - Application Programming Interface : 웹 사이트가 동작하기 위한 프로그래밍 명령
+    ```
+    // HTML 
+    
 
 ---
 
