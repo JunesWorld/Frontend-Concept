@@ -925,8 +925,14 @@ div { color : red;
     // HTML 요소에 적용할 수 있는 메소드!
     boxEl.addEventListener();
     
-    // 인수(Arguments)를 추가 기능!
+    // 인수(Arguments=1,2)를 추가 기능!
     boxEl.addEventListener(1, 2);
+    
+    // 참고) 매개변수(Parameters)
+    // 아래 함수 선언의 a, b와 같이 함수 호출에서 전달받은 인수를 함수 내부로 전달하기 위한 변수
+    function sum(a, b) {
+      return a + b;
+    }
     
     // 1 - 이벤트(Event, 상황)
     boxEl.addEventListener('click', 2);
