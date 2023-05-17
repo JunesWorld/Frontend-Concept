@@ -918,7 +918,26 @@ div { color : red;
       - Object Modle = div / sapn / input
     - Application Programming Interface : 웹 사이트가 동작하기 위한 프로그래밍 명령
     ```
-    // HTML 
+    // HTML 요소(Element) 1개 검색/찾기
+    // HTML 검색하는 메소드 = querySelector
+    const boxEl = document.querySelector('.box');
+    
+    // HTML 요소에 적용할 수 있는 메소드!
+    boxEl.addEventListener();
+    
+    // 인수(Arguments)를 추가 기능!
+    boxEl.addEventListener(1, 2);
+    
+    // 1 - 이벤트(Event, 상황)
+    boxEl.addEventListener('click', 2);
+    
+    // 2 - 핸들러(Handler, 실행할 함수) = function
+    // addEventListener Method가 click이라는 Event 발생하면 function 실행
+    boxEl.addEventListener('click', function () {
+      console.log('Click~!);
+    });
+    ```
+    ```
     
 
 ---
