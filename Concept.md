@@ -37,6 +37,8 @@
 - Live Server
   > HTML File에서만 작동
   > 우클릭 -> Open with Live Server
+- Live Server Chrome 설정
+  > Code -> 기본설정 -> 검색 : Live Server Config -> Live Server>Settings:Custom Browser 
 - 공백 2 설정
   > Code -> 기본설정 -> 설정 -> Editor -> Tab Size 2
 
