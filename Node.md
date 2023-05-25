@@ -20,5 +20,16 @@ HTML/CSS/JS 변환을 해주기 위해 사용한다.
 >  > nvm-windows 검색 -> coreybutler/nvm-widows(Github)
 >  > Download Now!
 >  > nvm-setup.zip 파일 다운 후 설치!
-
-## NVM 사용법
+4. 사용법
+  - Terminal에서 설치 확인 
+    ```bash
+    $ nvm ls
+    ```
+  - Node.js LTS Version 확인 후 설치 및 사용
+    ```bash
+    $ nvm install [Version]
+    $ nvm use [Version]
+    ```
+  - Node.js 설치 확인
+    ```
+    ```
