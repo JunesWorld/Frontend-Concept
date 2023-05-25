@@ -28,8 +28,17 @@ HTML/CSS/JS 변환을 해주기 위해 사용한다.
   - Node.js LTS Version 확인 후 설치 및 사용
     ```bash
     $ nvm install [Version]
-    $ nvm use [Version]
+    $ nvm use [Version] // 변경시
     ```
   - Node.js 설치 확인
+    ```bash
+    $ node --version
     ```
+  - Version 삭제
     ```
+    $ nvm uninstall [Version]
+    ```
+    
+## NPM(Node Package Manager)
+
+전 세계의 개발자들이 만든 다양한 기능(패키지, 모듈)들을 관리
