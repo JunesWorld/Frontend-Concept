@@ -49,5 +49,25 @@ Node.js를 설치하면 자동으로 설치된다.
   $ npm init -y
   ```
   package.json 파일이 생성된다.
-  - name : 폴더 이름
-  - 
+  `name` : 폴더 이름
+  `main` : 현재의 project를 하나의 pkg처럼 만들어서 npm 생태계에 upload하기 위한 옵션
+  `scripts` : 현재 프로젝트에서 사용할 수 있는 scripts 명령어 명시
+
+- 설치
+  pakage 설치(parcel-bundler & lodash) 
+  - 개발용 의존성 패키지 설치 : 개발할 때만 필요하고 웹브라우저에서 동작할 때 필요하지 않을 때 사용
+  ```bash
+  npm install parcel-bundler -D
+  ```
+  - 일반 의존성 설치 : 실제로 웹브라우저에서 동작해야 할 때 사용
+  ```bash
+  npm install lodash
+  ```
+  - 설치가 되면 node-modules 폴더에 pkg(+필요한 pkg)가 들어간다.
+  - `node_modules` 파일을 지우더라도 `npm i`를 사용하면 설치한 pkg 다시 생성
+
+- `pakage.json` : 설치한 pkg 명시되어 있는 곳(직접 관리! & 삭제 X)
+  - install 시 -D : `devDependencies`
+  - install : `dependencies`
+
+- `pakage-lock.json` : 설치한 pkg의 내부적으로 사용되는 pkg 정보(자동 관리! & 삭제 X)
