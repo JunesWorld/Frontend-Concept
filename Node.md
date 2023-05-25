@@ -41,4 +41,13 @@ HTML/CSS/JS 변환을 해주기 위해 사용한다.
     
 ## NPM(Node Package Manager)
 
-전 세계의 개발자들이 만든 다양한 기능(패키지, 모듈)들을 관리
+전 세계의 개발자들이 만든 다양한 기능(패키지, 모듈)들을 관리. 
+Node.js를 설치하면 자동으로 설치된다.  
+
+- 실행
+  ```bash
+  $ npm init -y
+  ```
+  package.json 파일이 생성된다.
+  - name : 폴더 이름
+  - 
