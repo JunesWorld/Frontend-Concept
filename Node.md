@@ -77,7 +77,11 @@ Node.js를 설치하면 자동으로 설치된다.
   npm info lodash
   ``` 
   
-- 
+- 새로운 버전 Install
+  - pakacage.json(main VS node_modules) 버전 일치시켜 줄 것!!!)
+  ```bash
+  npm install lodash@[Version]
+  ```
 
 ## 사용해보기(parcel & lodash)
 
