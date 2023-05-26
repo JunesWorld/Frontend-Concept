@@ -127,3 +127,11 @@ Node.js를 설치하면 자동으로 설치된다.
 - Patch : 기존 버전과 호환되는 버그 및 오타 등이 수정된 버전
 
 ^Major.Minor.Patch : Major 버전 안에서 가장 최신 버전으로 업데이트 가능
+
+## .gitignore
+
+```
+.cache/
+dist/
+node_modules/
+```
