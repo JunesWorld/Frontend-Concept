@@ -72,8 +72,16 @@ Node.js를 설치하면 자동으로 설치된다.
 
 - `pakage-lock.json` : 설치한 pkg의 내부적으로 사용되는 pkg 정보(자동 관리! & 삭제 X)
 
-## 사용해보기
+- 정보 확인
+  ```bash
+  npm info lodash
+  ``` 
+  
+- 
 
+## 사용해보기(parcel & lodash)
+
+- parcel : open with live server 대신 사용
 - index.html & main.js 파일 생성
 - index.html
   ```html
@@ -97,7 +105,8 @@ Node.js를 설치하면 자동으로 설치된다.
       } 
     ```
 - `$ npm run build` : build(사람들이 보는 용도)
-  - 
+  - 난독화 되어 있는 dist 파일 자동 생성
+  - dist = 웹브라우저에서 동작한다고 해석
 
 ## 유의적 버전(Semantic Versioning, SemVer)
 
