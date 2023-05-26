@@ -83,6 +83,13 @@ Node.js를 설치하면 자동으로 설치된다.
   npm install lodash@[Version]
   ```
 
+- Version Update
+  - package.json 
+    - dependencies 버전에 ^ 기호가 있어야 Major 부분 제외 최신 버전으로 업데이트!
+  ```bash
+  npm update lodash
+  ```
+
 ## 사용해보기(parcel & lodash)
 
 - parcel : open with live server 대신 사용
