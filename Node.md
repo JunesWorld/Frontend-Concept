@@ -72,10 +72,22 @@ Node.js를 설치하면 자동으로 설치된다.
 
 - `pakage-lock.json` : 설치한 pkg의 내부적으로 사용되는 pkg 정보(자동 관리! & 삭제 X)
 
+## 사용해보기
+- index.html & main.js 파일 생성
+- index.html
+  ```html
+  <script src="./main.js"></script>
+  ```
+- main.js
+  ```javascript
+  console.log(hello world!);
+  ```
+
 ## 유의적 버전(Semantic Versioning, SemVer)
+
 12.14.1 (Major.Minor.Patch)
 - Major : 기존 버전과 호환되지 않는 새로운 버전
 - Minor : 기존 버전과 호환되는 새로운 기능이 추가된 버전
 - Patch : 기존 버전과 호환되는 버그 및 오타 등이 수정된 버전
 
-^Major.Minor.Patch : Major 
+^Major.Minor.Patch : Major 버전 안에서 가장 최신 버전으로 업데이트 가능
