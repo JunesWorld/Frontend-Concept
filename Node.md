@@ -73,6 +73,7 @@ Node.js를 설치하면 자동으로 설치된다.
 - `pakage-lock.json` : 설치한 pkg의 내부적으로 사용되는 pkg 정보(자동 관리! & 삭제 X)
 
 ## 사용해보기
+
 - index.html & main.js 파일 생성
 - index.html
   ```html
@@ -80,8 +81,23 @@ Node.js를 설치하면 자동으로 설치된다.
   ```
 - main.js
   ```javascript
-  console.log(hello world!);
+  // modules에 있는 lodash.js를 가져와 _에 할당
+  import _ from 'lodash'
+  
+  console.log('hello world');
+  console.log(_.camelCase('hello world'));
   ```
+- `$ npm run dev` : parcel의 도움을 받는다 / dev(개발용)
+  - 로컬환경에서 개발용으로 서버를 열겠다(open with live server 사용 대신함)
+  - package.json  
+    ```
+     "scripts": {
+        "dev": "parcel index.html", 
+        "build": "parcel build index.html" 
+      } 
+    ```
+- `$ npm run build` : build(사람들이 보는 용도)
+  - 
 
 ## 유의적 버전(Semantic Versioning, SemVer)
 
