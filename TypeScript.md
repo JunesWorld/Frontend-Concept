@@ -37,4 +37,9 @@ Editor를 사용해서 작성 </br>
 ## 설치
 
 실행환경인 Browser(Chrome) Node.js가 설치되어있어야한다.
+- `npm init -y`
+- `npm i typescript -D`
+- `npx tsc --init` : Typescript에서 compile하는 옵션
+  - tsconfig.json 파일 생성
+- `.ts` : 확장자명
 
