@@ -30,6 +30,11 @@ Complied | Interpreted
 
 ## 정리
 
-Editor 
--> TypeScript Compiler(Browser or Node 실행 환경에서 이해하고 사용할 수 있는 plain javascripte로 변경)
+Editor를 사용해서 작성 </br>
+-> TypeScript Compiler</br>(Browser or Node.js 실행 환경에서 이해하고 사용할 수 있는 plain javascripte로 변경)</br>
 -> Browser, Node.js
+
+## 설치
+
+실행환경인 Browser(Chrome) Node.js가 설치되어있어야한다.
+
