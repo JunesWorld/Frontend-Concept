@@ -19,3 +19,11 @@ before you run code.
 - JavaScript는 'Interpreted Language'이다.
 
 ## Compiled VS Interpreted
+
+:--:|:--:
+Complied | Interpreted
+컴파일이 필요 O | 컴파일이 필요 X
+컴파일러가 필요 O | 컴파일러가 필요 X
+컴파일하는 시점 O (컴파일 타임) | 컴파일 하는 시점 X
+컴파일된 결과물을 실행 | 코드 자체를 실행
+컴파일된 결과물을 실행하는 시점 | 코드를 실행하는 시점 O (Runtime)
