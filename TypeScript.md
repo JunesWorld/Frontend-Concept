@@ -42,4 +42,6 @@ Editor를 사용해서 작성 </br>
 - `npx tsc --init` : Typescript에서 compile하는 옵션
   - tsconfig.json 파일 생성
 - `.ts` : 확장자명
+- `npm tsc` : 모든 ts 파일이 config에 맞춰 Compile
+  - 
 
