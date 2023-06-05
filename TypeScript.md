@@ -31,7 +31,7 @@ Complied | Interpreted
 ## 정리
 
 Editor를 사용해서 작성 </br>
--> TypeScript Compiler</br>(Browser or Node.js 실행 환경에서 이해하고 사용할 수 있는 plain javascripte로 변경)</br>
+-> TypeScript Compiler</br>(Browser or Node.js 실행 환경에서 이해하고 사용할 수 있는 Plain Javascripte로 변경)</br>
 -> Browser, Node.js
 
 ## 설치
