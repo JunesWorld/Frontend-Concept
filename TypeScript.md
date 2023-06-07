@@ -1,7 +1,7 @@
 # TypeScript
 
 = Language / Typed Superset of JavaScript
-= compiles to plain(Browser or Node 실행 환경에서 이해할 수 있는) JavaScript
+= compiles to plain(Browser or Node.js 실행 환경에서 이해할 수 있는) JavaScript
 
 ## Typed JavaScript at any Scale
 
