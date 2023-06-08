@@ -43,5 +43,13 @@ Editor를 사용해서 작성 </br>
   - tsconfig.json 파일 생성
 - `.ts` : 확장자명
 - `npm tsc` : 모든 ts 파일이 config에 맞춰 Compile
-  - 
 
+## Typescript Types VS Javascript Types
+
+Typescript Types | Javascript Types
+:--:|:--:
+Static Types | Dynamic Types
+set during development | reslolved at runtime
+개발 중간에 타입 체크 | 런타임에 돌입해야만 알 수 있다
+
+- 
