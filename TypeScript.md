@@ -159,4 +159,7 @@ console.log(f3('Mark') + 5); // NaN
   // 하지만, 실제 undefined + 5가 실행되어 NaN이 출력
   console.log(f4(5)); // 190
   console.log(f4(-5) + 5); // NaN
-- strictNullChecks 
+- strictNullChecks 옵션을 켜면 모든 타입에 자동으로 포함되어 있는 `null`과 `undefined`를 제거
+- number | undefined 타입으로
+
+  // 사용자는 사용법에 맞게 숫자형을 사용하여 함수를 실행했습니다.
