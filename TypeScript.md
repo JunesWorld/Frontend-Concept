@@ -96,3 +96,5 @@ set during development | reslolved at runtime
   new Number(42); // typeof new Number(42) : 'object'
   ```
 - TypeScript의 핵심 Primitive Types는 모두 소문자!!
+
+## 
