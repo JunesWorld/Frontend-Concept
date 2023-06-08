@@ -101,4 +101,62 @@ set during development | reslolved at runtime
 
 - 컴파일러에게 사용하는 타입을 명시적으로 지정하는 시스템
 - 컴파일러가 자동으로 타입을 추론하는 시스템
-- TypeScript
+- TypeScript의 타입 시스템
+  - 타입을 명시적으로 지정할 수 있다.
+  - 타입을 명시적으로 지정하지 않으면, 타입스크립트 컴파일러가 자동으로 타입을 추론
+```JS
+// 타입이란 해당 변수가 할 수 있는 일을 결정합니다.
+// f1이라는 함수의 body에서는 a를 사용하겠습니다.
+// a가 할 수 있는 일은 a의 타입이 결정합니다.
+function f1(a) {
+  return a;
+}
+
+// 함수 사용법에 대한 오해를 야기하는 자바스크립트
+// (f2 실행의 결과가 NaN을 의도한 것이 아니라면)
+// 이 함수의 작성자는 매개변서 a가 number 타입이라는 가정으로 함수를 작성했습니다.
+function f2(a) {
+  return a * 38;
+}
+// 사용자는 사용법을 숙지하지 않은 채, 문자열을 사용하여 함수를 실행했습니다.
+console.log(f2(10)); // 380
+console.log(f2('Mark')); // NaN
+
+// 타입스크립트의 추론에 의지하는 경우
+// 타입스크립트 코드지만,
+// a의 타입을 명시적으로 지정하지 않은 경우이기 때문에 a는 any로 추론
+// 함수의 리턴 타입은 number로 추론 (NaN도 number의 하나)
+function f3(a) {
+  return a * 38;
+}
+// 사용자는 a가 any이기 때문에, 사용법에 맞게 문자열을 사용하여 함수를 실행
+console.log(f3(10)); // 380
+console.log(f3('Mark') + 5); // NaN
+```
+- noImplicitAny 옵션을 켜면 타입을 명시적으로 지정하지 않은 경우</br>
+  타입스크립트가 추론 중 any라고 판단하게 되면 컴파일 에러를 발생시켜 명시적으로 지정하도록 유도
+  ```JS
+  // Error: Parameter 'a' implicitly has an 'any' type.
+  function f3(a) {
+    return a * 38;
+  }
+  // 사용자의 코드를 실행할 수 없습니다. 컴파일이 정상적으로 마무리 될 수 있도록 수정해야 합니다.
+  console.log(f3(10)); 
+  console.log(f3('Mark') + 5); 
+- number 타입으로 추론된 리턴 타입 
+  - number안에 undefined가 포함되어 있다.
+  - strictNullChecks 옵션을 켜야한다. 
+  ```JS
+  // 매개변수의 타입은 명시적으로 지정
+  // 명시적으로 지정하지 않은 함수의 리턴 타입은 number로 추론
+  function f4(a: number) {
+    if (a > 0) {
+      return a * 38;
+    }
+  }
+  // 사용자는 사용법에 맞게 숫자형을 사용하여 함수를 실행했습니다.
+  // 해당 함수의 리턴 타입은 number이기 때문에, 타입에 따르면 이어진 연산을 바로 할 수 있다.
+  // 하지만, 실제 undefined + 5가 실행되어 NaN이 출력
+  console.log(f4(5)); // 190
+  console.log(f4(-5) + 5); // NaN
+- strictNullChecks 
