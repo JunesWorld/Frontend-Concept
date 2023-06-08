@@ -160,6 +160,57 @@ console.log(f3('Mark') + 5); // NaN
   console.log(f4(5)); // 190
   console.log(f4(-5) + 5); // NaN
 - strictNullChecks 옵션을 켜면 모든 타입에 자동으로 포함되어 있는 `null`과 `undefined`를 제거
-- number | undefined 타입으로
-
+  - number | undefined 타입으로 추론된 리턴 타입
+  ```JS
+  // 매개변수의 타입은 명시적으로 지정
+  // 명시적으로 지정하지 않은 함수의 리턴 타입은 number | undefined로 추론
+  function f4(a: number) {
+    if (a > 0) {
+      return a * 38;
+    }
+  }
   // 사용자는 사용법에 맞게 숫자형을 사용하여 함수를 실행했습니다.
+  // 해당 함수의 리턴 타입은 number | undefined이기 때문에, 타입에 따르면 이어진 연산을 바로 할 수 없다.
+  // 컴파일 에러를 고쳐야하기 때문에 사용자와 작성자가 의논해야함
+  console.log(f4(5)); 
+  console.log(f4(-5) + 5); // Error: Object is possibly 'undefined' 
+  ```
+- 명시적으로 리턴 타입을 지정해야할까?
+```JS
+// 실제 함수 구현부의 리턴 타입과 명시적으로 지정한 타입이 일치하지 않아 컴파일 에러 발생
+// Error: Function lacks ending return statement and return type does not incorrect.
+function f5(a: number): number {
+  if (a > 0) {
+    return a * 38;
+  }
+}
+```
+- noImplicitReturns 옵션을 켜면, 함수 내에서 모든 코드가 값을 리턴하지 않으면, 컴파일 에러 발생시킨다.
+  - 모든 코드에서 리턴을 직접해야 한다.
+  - if문과 아닌 경우 모두 return 해줘야 한다!!
+  ```JS
+  // if가 아닌 경우 return을 직접 하지 않고 코드가 종료
+  // Error: Not all code paths return a value.
+  function f5(a: number) {
+    if (a > 0) {
+      return a * 38;
+    }
+  }
+  ```
+- 매개변수에 object가 들어오는 경우
+  - object literal type을 사용하면 되지만 길어진다. 그래서 나만의 타입을 만들어 사용
+  - 나만의 타입을 만드는 방법
+    ```JS
+    interface PersonInterface {
+      name: string;
+      age: number;
+    }
+    type PersonTypeAlias = {
+      name: string;
+      age: number;
+    };
+    function f8(a: PersonInterface): string {
+      return `이름은 ${a.name}이고, 연령대는 ${Math.floor(a.age / 10) * 10}대 입니다.`;
+    }
+    console.log(f8({ name: 'Mark', age: 38 })); // 이름은 Mark 이고, 연령대는 30대 입니다.
+    console.log(f8('Mark')); // Error: Argument of type 'string' is not assignable to parameter of type 'PersonInterface'
