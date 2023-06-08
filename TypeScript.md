@@ -52,4 +52,21 @@ Static Types | Dynamic Types
 set during development | reslolved at runtime
 개발 중간에 타입 체크 | 런타임에 돌입해야만 알 수 있다
 
-- 
+- 프로그램이 유용하려면, 가장 간단한 데이터 단위로 작업 할 수 있어야합니다.
+  - numbers, strings, structures, boolean 값 등등
+- TypeScript에서, 우리는 JavaScript에서 기대하는 것과 동일한 타입을 지원하며, 돕기 위해 추가적인 열거 탑입이 제공되었습니다.
+- Typescript에서 프로그램 작성을 위해 기본 제공하는 데이터 타입
+- 사용자가 만든 타입은 결국은 이 기본 자료형들로 쪼개집니다.
+- JavaScript 기본 자료형을 포함(superset)
+  - ECMAScript 표준에 따른 기본 자료형은 6가지
+    - Boolean
+    - Number
+    - String
+    - Null
+    - Undefined
+    - Symbol(ECMAScript 6에 추가)
+    - Array : object형
+- 프로그래밍을 도울 몇가지 타입이 더 제공된다.
+  - Any, Void, Never, Unknown
+  - Enum
+  - Tuple : object형
