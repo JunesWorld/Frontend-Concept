@@ -70,3 +70,6 @@ set during development | reslolved at runtime
   - Any, Void, Never, Unknown
   - Enum
   - Tuple : object형
+
+## Primitive Type
+- 
