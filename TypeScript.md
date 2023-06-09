@@ -214,3 +214,48 @@ function f5(a: number): number {
     }
     console.log(f8({ name: 'Mark', age: 38 })); // 이름은 Mark 이고, 연령대는 30대 입니다.
     console.log(f8('Mark')); // Error: Argument of type 'string' is not assignable to parameter of type 'PersonInterface'
+
+## Structural Type System VS Nominal Type System
+
+- TypeScript는 duck typing이 아니다.
+  - duck typing
+    - 만약 어떤 새가 오리처럼 걷고, 헤엄치고, 꽥괙 소리를 낸다면 나는 그 새를 오리라고 부를 것이다.
+    - python이 대표적
+
+- Structural Type System : 구조가 같으면 같은 타입이다.
+  - Typescript
+  ```JS
+  interface IPerson {
+    name: string;
+    age: number;
+    speak(): string;
+  }
+  
+  type PersonType {
+    name: string;
+    age: number;
+    speak(): string;
+  }
+  
+  let personInterface: IPerson = {} as any;
+  let personType: PersonType = {} as any;
+  
+  personInterface = personType;
+  personType = personInterface;
+  ```
+
+- Nominal Type System : 구조가 같아도 이름이 다르면, 다른 타입이다.
+  - C언어, Java
+  ```JS
+  type PersonID = string & { readonly brand: unique symbol };
+  
+  function PersonID(id: string): PersonID {
+    return id as PersonID;
+  }
+  
+  function getPersonById(id: PeersonID) {}
+  
+  // PersonID로 치환된 형태만 넣을 수 있게 한다.
+  getPersonById(PersonID('id-aaaaaa'));
+  getPersonById('id-aaaaaa'); // ERROR
+  ```
