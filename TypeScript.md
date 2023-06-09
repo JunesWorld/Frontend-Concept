@@ -277,8 +277,29 @@ function f5(a: number): number {
 ## 타입 별칭(Type Alias)
 
 - Interface와 비슷해보인다.
+  - Interface : Type으로써 목적 or 존재가치가 명확할 때 사용
+  - Alias : 단순히 가리키거나 별명으로써 사용
 - Primitive, Union Type, Tuple, Function
 - 기타 직접 작성해야하는 타입을 다른 이름을 지정할 수 있습니다.
 - 만들어진 타입의 refer로 사용하는 것이지 타입을 만드는 것은 아닙니다.
 - Aliasing Union Type
   ```JS 
+  let person: string | number = 0;
+  person = 'Mark';
+  
+  type StringOrNumber = string | number;
+  
+  let another: StringOrNumber = 0;
+  another = 'Anna';
+  
+- Aliasing Tuple
+  ```JS
+  let person: [string, number] = ['Mark', 35];
+  type PersonTuple = [string, number];
+  let another: PersonTuple = ['Anna', 24];
+  ```
+  
+- Aliasing Function
+  ```JS
+  type EatType = (food: string) => void;
+  ``` 
