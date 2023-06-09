@@ -259,3 +259,26 @@ function f5(a: number): number {
   getPersonById(PersonID('id-aaaaaa'));
   getPersonById('id-aaaaaa'); // ERROR
   ```
+
+## 타입 호환성(Type Compatibility)
+
+- 서브 타입
+  - 공변 : 같거나 서브 타입인 경우, 할당이 가능하다.
+  - 반병 : 함수의 매개변수 타입만 같거나 슈퍼타입인 경우, 할당이 가능하다.
+  ```JS
+  // sub1 타입은 sup1 타입의 서브 타입이다.
+  // object = primitive type이 아닌 것
+  // sub1은 sup1의 하위 타입이기 때문에 할당 할 수 없다.
+  let sub1: number[] = [1]; // Array
+  let sup1: object = sub1;
+  sub1 = sup1; // Error
+  ```
+  
+## 타입 별칭(Type Alias)
+
+- Interface와 비슷해보인다.
+- Primitive, Union Type, Tuple, Function
+- 기타 직접 작성해야하는 타입을 다른 이름을 지정할 수 있습니다.
+- 만들어진 타입의 refer로 사용하는 것이지 타입을 만드는 것은 아닙니다.
+- Aliasing Union Type
+  ```JS 
