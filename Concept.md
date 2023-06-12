@@ -74,6 +74,8 @@
       - ``` <head> ``` 안쪽에 넣으면 CSS 스타일 초기화
       - ``` <link rel=”stylesheet” href=https://cdn.jsdelivr.net/npm/rest-css@5.0.1/reset.min.css> ```
   - 빈 Tag에는 "/" 넣는 습관! 
+  - Favicon 만드는 Page
+    - [ICOConverter](https://www.icoconverter.com/) 
 ---
 
 ## HTML(Hyper Text Markup Language) : 기획자(구조)
