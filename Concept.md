@@ -77,6 +77,8 @@
   - Favicon 만드는 Page
     - Google : ICOConverter 
     - https://www.icoconverter.com/
+  - 종속성 충돌 시
+    - ```--legacy-peer-deps ```
 ---
 
 ## HTML(Hyper Text Markup Language) : 기획자(구조)
