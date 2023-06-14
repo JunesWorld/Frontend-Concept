@@ -51,5 +51,6 @@ Code 하이라이팅
 ## App.vue
 
 - template = HTML
+  > Helloworld Vue File(Component) 제거 후 Project 시작 
 - script = Javascript
 - style = CSS/SCSS
