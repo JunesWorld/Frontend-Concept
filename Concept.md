@@ -41,6 +41,8 @@
   > Code -> 기본설정 -> 검색 : Live Server Config -> Live Server>Settings:Custom Browser 
 - 공백 2 설정
   > Code -> 기본설정 -> 설정 -> Editor -> Tab Size 2
+- Vuter
+  > Vue Code 하이라이팅
 
 ## VSCode
 - Project 단위 = Folder(Directory)
