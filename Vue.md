@@ -60,4 +60,6 @@ Code 하이라이팅
 webpack-template-basic 기반으로 시작
 ```bash
 npx degit JunesWorld/webpack-template-basic vue3-webpack-template
+cd vue3-webpack-template
+code . -r
 ```
