@@ -54,3 +54,10 @@ Code 하이라이팅
   > Helloworld Vue File(Component) 제거 후 Project 시작 
 - script = Javascript
 - style = CSS/SCSS
+
+## Webpack을 기반으로 하는 Vue Project
+
+webpack-template-basic 기반으로 시작
+```bash
+npx degit JunesWorld/webpack-template-basic vue3-webpack-template
+```
