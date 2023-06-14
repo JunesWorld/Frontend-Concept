@@ -81,6 +81,7 @@
     - ```--legacy-peer-deps ```
 
   - NPX, Degit = like git clone
+    > git clone과의 차이점 : version 내역이 삭제되고 생성
 
     새로운 Terminal Open
 
@@ -95,6 +96,7 @@
     - 설치
       ```bash
       npx degit [Github 이름]/[다운 받을 폴더 이름] [다운 시 원하는 폴더 이름]
+      npx degit JunesWorld/webpack-template-basic vue3-webpack-template
       ```
 ---
 
