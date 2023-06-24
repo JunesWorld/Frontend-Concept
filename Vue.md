@@ -63,3 +63,12 @@ npx degit JunesWorld/webpack-template-basic vue3-webpack-template
 cd vue3-webpack-template
 code . -r
 ```
+
+## 어플리케이션 인스턴스 생성하기
+
+Vue.js Hompage -> 어플리케이션 인스턴스 생성하기
+
+- 모든 Vue 어플리케이션은 ```createApp``` 함수를 사용하여 새로운 어플리케이션 인스턴스를 생성하여 시작합니다.(app이라는 변수에 받아 사용)
+  ```JS
+  const app = Vue.createApp
+  ```
