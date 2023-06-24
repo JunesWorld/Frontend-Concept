@@ -72,3 +72,5 @@ Vue.js Hompage -> 어플리케이션 인스턴스 생성하기
   ```JS
   const app = Vue.createApp
   ```
+- 인스턴스가 생성되면, mount 메소드에 컨테이너를 전달하여 mount 할 수 있습니다. 예를들어, <div id="app"></div>에 Vue 어플리케이션을 마운트 시키고 싶다면, #app을 전달해야합니다.
+- Method Chaining 사용 가능
