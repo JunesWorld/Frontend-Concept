@@ -86,3 +86,9 @@ ESLint 적용시 multi-word-component-names
     }]
 }
 ```
+
+[Vue] is denied but never used
+- 해당 Line
+  ```html
+  // eslint-disable-line no-unused-vars
+  ```
