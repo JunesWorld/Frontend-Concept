@@ -63,3 +63,10 @@ React는 사용자 인터페이스를 만들기 위한 JavaScript 라이브러�
 
 - public/index.html : 페이지 템플릿
 - src/index.js : 자바스크립트 시작점
+
+## SPA(Single Page Application)이란?
+
+현재 App.js파일의 소스 코드를 변경하면 변경한 부분이 화면에 적용이 된다.  
+웹 사이트의 전체 페이지를 하나의 페이지(index.html)에 담아 동적으로 화면을 바꿔가며 표현합니다.  
+`<div id="root"></div>` -> index.html  
+History API를 사용하여 화면 변경이 일어난다.
