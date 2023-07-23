@@ -11,6 +11,19 @@ TypeScript saves you time catching errors and providing fixes</br>
 before you run code.
 - Any browser, anyOS, anywhere JavaScript runs. Entirely Open Source.
 
+## 타입이란?
+
+그 value가 가지고 있는 프로퍼티나 함수를 추론할 수 있는 방법이다.
+
+"apple"
+- string 문자열
+- 이것은 value인데 문자열이 가지는 프로퍼티, 메소드를 가지고 있는 value입니다.
+  ```js
+  let string: string;
+  'string'.length // 프로퍼티 : 문자열 길이 제공
+  'string'.toLowerCase(); // 메소드 : 문자열에 작업을 수행한 다음 반환
+  ```
+  
 ## TypeScript는
 - Programming Language 언어
 - Complied Language
